@@ -1,0 +1,7 @@
+/* solid代表实线  */
+div{
+    border: 1px solid red;
+}
+span{
+    border: 1px solid blue;
+}

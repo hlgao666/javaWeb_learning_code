@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testlegal</title>
+    <script>
+        function onclickFun() {
+            var username = document.getElementById("username");
+            var usernameText = username.value;
+            var pattern = /^\w{5,12}$/;
+
+            var usernamespanObj = document.getElementById("usernamespan");
+            if (pattern.HelloServlet(usernameText)){
+                usernamespanObj.innerHTML = "legal";
+                //usernamespanObj.innerHTML = "<img src=\"right.png\" width=\"18\" height=\"18\">";  \代表转义
+            }else{
+                usernamespanObj.innerHTML = "illegal";
+                //usernamespanObj.innerHTML = "<img src=\"wrong.png\" width=\"18\" height=\"18\">";  \代表转义
+            }
+        }
+    </script>
+
+</head>
+<body>
+用户名：<input type="text" value="www" id="username" />
+<span id="usernamespan" style="color: red;">1234</span>
+<button onclick="onclickFun();">HelloServlet</button>
+</body>
+</html>

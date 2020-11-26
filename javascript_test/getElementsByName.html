@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementsByName</title>
+    <script type="text/javascript">
+
+        function selectAll() {
+            var hobbies = document.getElementsByName("hobby");
+            for(var i=0; i<hobbies.length;i++){
+                hobbies[i].checked = true;
+            }
+        }
+
+        function selectNone() {
+            var hobbies = document.getElementsByName("hobby");
+            for(var i=0; i<hobbies.length;i++){
+                hobbies[i].checked = false;
+            }
+        }
+
+        function selectReverse() {
+            var hobbies = document.getElementsByName("hobby");
+            for(var i=0; i<hobbies.length;i++){
+                if(hobbies[i].checked){
+                    hobbies[i].checked = false;
+                }else{
+                    hobbies[i].checked = true;
+                }
+
+            }
+        }
+    </script>
+</head>
+<body>
+<font color="blue" face="宋体" size="1">兴趣爱好：</font>
+    <input type="checkbox" name="hobby" value="cpp">c++
+    <input type="checkbox" name="hobby" value="java">java
+    <input type="checkbox" name="hobby" value="python">python
+<br/>
+<button onclick="selectAll()">全选</button>
+<button onclick="selectNone()">全不选</button>
+<button onclick="selectReverse()">反选</button>
+</body>
+</html>

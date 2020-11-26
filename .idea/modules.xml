@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/02_Servlet/02_Servlet.iml" filepath="$PROJECT_DIR$/02_Servlet/02_Servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BookStore01/BookStore01.iml" filepath="$PROJECT_DIR$/BookStore01/BookStore01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWebTest.iml" filepath="$PROJECT_DIR$/JavaWebTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet/Servlet.iml" filepath="$PROJECT_DIR$/Servlet/Servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jQuery/jQuery.iml" filepath="$PROJECT_DIR$/jQuery/jQuery.iml" />
+    </modules>
+  </component>
+</project>

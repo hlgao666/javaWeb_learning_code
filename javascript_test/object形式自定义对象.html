@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object</title>
+    <script type="text/javascript">
+        var person = new Object(); //实例化对象
+        person.name = "abc";       //属性
+        person.age = 18;
+        person.fun = function(){   //方法
+            alert("name: "+this.name+" age: "+this.age);
+        };
+        alert(person.fun());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

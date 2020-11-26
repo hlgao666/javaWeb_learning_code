@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onclick</title>
+    <script type="text/javascript">
+        //静态注册
+        fun1 = function () {
+            alert(arguments[0]);
+        };
+        //动态注册
+        window.onload = function () {
+            var obj = document.getElementById("btn02");
+            obj.name = "002";
+            obj.onclick = function () {
+                alert(obj.name);
+            }
+        };
+    </script>
+</head>
+<body>
+    <button onclick="fun1(1, 2)">按钮1</button>
+    <button id="btn02">按钮2</button>
+</body>
+</html>

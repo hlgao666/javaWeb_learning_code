@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OnChange</title>
+    <script type="text/javascript">
+        function onchangeFun(){
+            alert("女神改变了！")
+        }
+
+        window.onload = function(){
+            var selObj = document.getElementById("sel01");
+            selObj.onchange = function(){
+                alert("男神改变了！")
+            }
+        }
+    </script>
+</head>
+<body>
+//静态注册改变
+<select onchange="onchangeFun();">
+    请选择你心目中的女神：
+    <option>---女神---</option>
+    <option>fanbinbin</option>
+    <option>zhangziyi</option>
+</select>
+
+//动态注册改变
+<select id="sel01">
+    请选择你心目中的男神：
+    <option>---男神---</option>
+    <option>liangchaowei</option>
+    <option>guofucheng</option>
+</select>
+
+</body>
+</html>

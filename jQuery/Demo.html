@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+
+    <script type="text/javascript" src="jquery-1.7.2.js"></script>
+
+    <script>
+        $(function () {     //相当于window.onload = function(){}
+            $("#btn01").click(function () {
+                alert($(":button").text());
+                alert("1");
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <button id="btn01">按钮1</button>
+</body>
+</html>

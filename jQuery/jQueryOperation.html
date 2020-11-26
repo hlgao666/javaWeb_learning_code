@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQueryOperation</title>
+    <script type="text/javascript" src="jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // $("button").mouseout(function () {
+            //     console.log("out!!!");
+            // });
+            //
+            // $("button").mouseover(function () {
+            //     console.log("in!!!");
+            // });
+            // $("button").bind("click mouseover mouseout",function () {
+            //     console.log("many things!!!");
+            // });
+            // $("button").one("click mouseover mouseout",function () {
+            //     console.log("many things!!!");
+            // });
+            // $("button").unbind("click mouseover mouseout");
+            $("button").live("click mouseover mouseout",function () {
+                console.log("many things!!!");
+            });
+            $('<button>按钮2</button>').appendTo($("body"));
+        });
+    </script>
+</head>
+<br>
+<button>按钮1</button><br/>
+</body>
+</html>

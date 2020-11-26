@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REGEXP</title>
+    <script type="text/javascript">
+        //表示字符串是否包含字母a e
+        //var patt = /[ae]/;
+        //表示字符串是否包含小写字母
+        // var patt = /[a-z]/;
+        //表示字符串是否不包含小写字母
+        // var patt = /[^a-z]/;
+        //表示字符串是否包含任意数字
+        // var patt = /[0-9]/;
+        //是否包含字母 数字 下划线
+        // var patt = /\w/;
+        //至少包含一个a
+        // var patt = /a+/;
+        //包含任何0个或多个a的字符串
+        // var patt = /a*/;
+        //包含任何0个或1个a的字符串
+        // var patt = /a?/;
+        //包含连续5个a的字符串
+        // var patt = /a{5}/;
+        //包含至少3个连续a至多5个连续a的字符串
+        // var patt = /a{3,5}/;
+        //包含至少连续5个a的字符串
+        // var patt = /a{5,}/;
+        //字符串以a结尾
+        // var patt = /a$/;
+        //字符串以a开头
+        // var patt = /^a/;
+        //字符串从头到尾检查，必须字母数字下划线5-12位
+        var patt = /^\w{5,12}$/;
+
+        var str = 'ffffav';
+        alert(patt.HelloServlet(str));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

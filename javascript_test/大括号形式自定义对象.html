@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大括号对象</title>
+    <script type="text/javascript">
+        var person = {      //实例化
+            age:18,         //属性
+            name:"qwer",
+            fun:function () {       //函数
+                alert("name: "+this.name+" age:"+this.age);
+            }
+        };
+        alert(person.fun());        //调用
+    </script>
+</head>
+<body>
+
+</body>
+</html>

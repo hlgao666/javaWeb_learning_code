@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数1</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*  js函数不允许重载  */
+
+        /* 第一种定义方式  */
+        /*  有参函数定义  */
+        function fun1(a, b) {
+
+            alert("a="+a+" b="+b);
+
+            var sum;
+            sum = a + b;
+            return sum;     //返回值
+        }
+        /*  调用  */
+        alert("sum=" + fun1(4, 3));
+
+        /* 第二种定义方式,注意函数体结尾的分号  */
+        var fun2 = function (c, d) {
+            alert("c="+c+" d="+d);
+            var sum;
+            sum = c + d;
+            return sum;
+        };
+        /*  调用  */
+        alert("sum=" + fun2(15, 20));
+    </script>
+</body>
+</html>

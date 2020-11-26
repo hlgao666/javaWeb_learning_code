@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementsByTagName</title>
+
+    <script type="text/javascript">
+        function selectAll() {
+            var hobbies = document.getElementsByTagName("input");
+            for(var i=0; i<hobbies.length;i++){
+                hobbies[i].checked = true;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+<font color="blue" face="宋体" size="1">兴趣爱好：</font>
+<input type="checkbox" name="hobby" value="cpp">c++
+<input type="checkbox" name="hobby" value="java">java
+<input type="checkbox" name="hobby" value="python">python
+<br/>
+<button onclick="selectAll()">全选</button>
+
+</body>
+</html>

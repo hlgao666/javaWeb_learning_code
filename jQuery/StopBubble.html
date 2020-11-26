@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stopBubble</title>
+
+    <style type="text/css">
+
+        #div1 {
+            border: 1px solid black;
+            width: 300px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        #showMsg {
+            border: 1px solid black;
+            width: 300px;
+            height: 20px;
+        }
+
+    </style>
+
+    <script type="text/javascript" src="jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+           $("#div1").click(function () {
+               alert("div");
+           });
+           $("span").click(function () {
+               alert("span");
+               return false;
+           });
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">
+        外层div元素<br/>
+        <span id="showMsg">span</span><br/>
+        外层div元素
+    </div>
+</body>
+</html>
